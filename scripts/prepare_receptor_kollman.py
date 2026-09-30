@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from MolKit import Read
 from AutoDockTools.MoleculePreparation import AD4ReceptorPreparation
 import sys
@@ -18,6 +19,6 @@ AD4ReceptorPreparation(
     outputfilename=output_file,
     delete_single_nonstd_residues=False,
 )
-print("prepared receptor: %s" % output_file)
+print("受体处理完成：%s" % output_file)
 
 
