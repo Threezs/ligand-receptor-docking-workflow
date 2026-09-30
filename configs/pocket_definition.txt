@@ -1,11 +1,15 @@
-SPP1 pocket definition
-======================
-Receptor: SPP1_2_model2_rigid.pdbqt (mature SPP1, chain A)
-Pocket anchor: RGD motif Arg159-Gly160-Asp161 in the selected model_2
-Center (Angstrom): x=-17.2, y=-52.6, z=19.8
-Box size (Angstrom): 30 x 30 x 30
+SPP1 对接区域定义
+=================
+受体：SPP1_2_model2_rigid.pdbqt（成熟 SPP1，A 链）
+功能位点锚点：所选 model_2 中的 RGD 基序，Arg159–Gly160–Asp161
+盒中心（Å）：x=-17.2，y=-52.6，z=19.8
+盒边长（Å）：30 × 30 × 30
 
-Rationale: RGD159-161 is the conserved osteopontin integrin-recognition site. The docking box is centered on the heavy-atom centroid of residues 159-161 with a 30 A margin to sample nearby side-chain and surface contacts. This is a functional-site docking box, not a claim of a crystallographically resolved small-molecule cavity; SPP1 is largely disordered and lacks a full-length experimental crystal structure.
+此前记录将 RGD159–161 作为骨桥蛋白的整合素识别功能位点，以这些残基的重原子质心附近定义盒中心，用于采样邻近侧链与表面接触。
 
-The same box is used for all ligands for comparability.
+这里的 30 Å 是对接盒每个方向的总边长，对应从盒中心向两侧各延伸 15 Å。
+
+该盒用于功能位点附近的探索性对接，不表示已有晶体结构解析的小分子结合腔。此前记录认为 SPP1 具有较多无序区域，因此应结合模型置信度谨慎解释结果。
+
+所有配体使用同一对接盒，保证区域设置一致。
 
