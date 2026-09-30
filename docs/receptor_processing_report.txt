@@ -1,29 +1,32 @@
-SPP1_2 model_2 receptor preparation report
-============================================
-Input CIF: receptor_data\fold_spp1_2\fold_spp1_2_model_2.cif
-Input model: SPP1_2 AlphaFold model_2
-Biological form: mature SPP1, UniProt residues 17-314
-Chain retained: A
+SPP1_2 model_2 受体处理记录
+==========================
+输入 CIF：receptor_data\fold_spp1_2\fold_spp1_2_model_2.cif
+输入模型：SPP1_2 AlphaFold model_2
+蛋白形式：成熟 SPP1，UniProt 残基 17–314
+保留链：A
 
-Generated files
----------------
-SPP1_2_model2_raw.pdb       Open Babel CIF-to-PDB conversion
-SPP1_2_model2_mature.pdb    residue numbering restored to 17-314; pLDDT retained in B-factor
-SPP1_2_model2_rigid.pdbqt   ADT receptor preparation
+生成文件
+--------
+SPP1_2_model2_raw.pdb       通过 Open Babel 将 CIF 转换为 PDB
+SPP1_2_model2_mature.pdb    残基编号恢复至 17–314，B-factor 保留 pLDDT
+SPP1_2_model2_rigid.pdbqt   使用 AutoDockTools 处理得到的受体
 
-ADT preparation
----------------
-Hydrogen repair: bonds_hydrogens
-Charges: Kollman
-Cleanup: nphs_lps_waters_nonstdres
-Receptor type: rigid
+AutoDockTools 参数
+------------------
+键和氢修复：bonds_hydrogens
+电荷：Kollman
+清理选项：nphs_lps_waters_nonstdres
+受体类型：刚性受体
 
-QC
---
-PDB: 2372 heavy atoms, 298 residues, chain A only, no HETATM
-PDBQT: 2909 atoms, 298 residues, chain A only
-PDBQT explicit hydrogens: 449
-PDBQT atom types: A=154, C=1271, HD=537, N=404, OA=539, SA=4
-PDBQT total charge: -31.0000
-No ligand processing was performed.
+此前质控结果（未在本次整理中重新测量）
+------------------------------------
+PDB：2372 个重原子，298 个残基，仅 A 链，无 HETATM
+PDBQT：2909 个原子，298 个残基，仅 A 链
+PDBQT 显式氢原子：此前记录为 449
+PDBQT 原子类型：A=154，C=1271，HD=537，N=404，OA=539，SA=4
+PDBQT 总电荷：-31.0000
+
+原始记录中的显式氢数 449 与 HD 类型计数 537 存在差异，本文件保留这两项记录，使用前应重新核对原始结构与统计口径。
+
+这份报告只记录受体处理，不涉及配体处理。
 
