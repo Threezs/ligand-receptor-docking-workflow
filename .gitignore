@@ -1,0 +1,18 @@
+# Generated and local files
+ligand_data/
+receptor_data/
+receptor_processed/
+docking_results/
+docking_test/
+openbabel_data/
+software/
+*.sdf
+*.pdb
+*.pdbqt
+*.cif
+*.xlsx
+*.log
+*.exe
+*.whl
+*.zip
+
