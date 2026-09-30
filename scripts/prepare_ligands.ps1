@@ -284,9 +284,9 @@ $results | Sort-Object Index | Export-Csv -LiteralPath $summaryPath -NoTypeInfor
 $ok = @($results | Where-Object { $_.Status -eq 'success' }).Count
 $skipped = @($results | Where-Object { $_.Status -eq 'skipped_existing' }).Count
 $failedCount = @($results | Where-Object { $_.Status -eq 'failed' }).Count
-Write-Output "Input records: $($records.Count)"
-Write-Output "Force field: $forceField"
-Write-Output "Workers: $ThrottleLimit"
-Write-Output "Success: $ok; skipped: $skipped; failed: $failedCount"
-Write-Output "Summary: $summaryPath"
+Write-Output "输入记录数：$($records.Count)"
+Write-Output "首选力场：$forceField"
+Write-Output "并行任务数：$ThrottleLimit"
+Write-Output "成功：$ok；跳过：$skipped；失败：$failedCount"
+Write-Output "汇总文件：$summaryPath"
 
