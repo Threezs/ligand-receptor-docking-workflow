@@ -1,0 +1,29 @@
+SPP1_2 model_2 receptor preparation report
+============================================
+Input CIF: receptor_data\fold_spp1_2\fold_spp1_2_model_2.cif
+Input model: SPP1_2 AlphaFold model_2
+Biological form: mature SPP1, UniProt residues 17-314
+Chain retained: A
+
+Generated files
+---------------
+SPP1_2_model2_raw.pdb       Open Babel CIF-to-PDB conversion
+SPP1_2_model2_mature.pdb    residue numbering restored to 17-314; pLDDT retained in B-factor
+SPP1_2_model2_rigid.pdbqt   ADT receptor preparation
+
+ADT preparation
+---------------
+Hydrogen repair: bonds_hydrogens
+Charges: Kollman
+Cleanup: nphs_lps_waters_nonstdres
+Receptor type: rigid
+
+QC
+--
+PDB: 2372 heavy atoms, 298 residues, chain A only, no HETATM
+PDBQT: 2909 atoms, 298 residues, chain A only
+PDBQT explicit hydrogens: 449
+PDBQT atom types: A=154, C=1271, HD=537, N=404, OA=539, SA=4
+PDBQT total charge: -31.0000
+No ligand processing was performed.
+
