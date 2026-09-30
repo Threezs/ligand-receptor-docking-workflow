@@ -1,0 +1,12 @@
+receptor = receptor_processed/SPP1_2_model2/SPP1_2_model2_rigid.pdbqt
+center_x = -17.2
+center_y = -52.6
+center_z = 19.8
+size_x = 30
+size_y = 30
+size_z = 30
+exhaustiveness = 16
+num_modes = 10
+cpu = 16
+verbosity = 1
+
