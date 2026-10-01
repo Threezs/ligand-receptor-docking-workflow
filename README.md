@@ -71,3 +71,9 @@ vina --config configs/vina_config_cpu16.txt --ligand path\to\ligand.pdbqt --out 
 
 整理后的脚本已进行 PowerShell 语法检查及 Python 编译检查。这些检查不等同于重新完成整套配体处理或分子对接；运行前仍需配置依赖和输入文件。
 
+
+## 相关通用仓库
+
+- [research-compendium-template-r](https://github.com/Threezs/research-compendium-template-r)：登记输入、参数、运行日志和结果报告的通用项目骨架。
+- [research-evidence-notebook](https://github.com/Threezs/research-evidence-notebook)：记录对接结果属于预测证据，并关联后续结合实验或文献证据。
+- [bioinformatics-methods-cookbook](https://github.com/Threezs/bioinformatics-methods-cookbook)：保存可复用的结果汇总、绘图和质量控制脚本。
